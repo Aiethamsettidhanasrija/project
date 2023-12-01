@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Sixties Learners</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+ 
+	</script>
+
+<style>
+body {
+        margin: 0;
+    }
+		.ai-img {
+			text-align: center;
+                        margin-top: 100px;
+		}
+
+		.ai-img img {
+			width: 50%; /* Adjust the size as needed */
+			border-radius: 50%; /* Optional: Apply a circular border */
+		}
+
+  /* Your existing styles */
+
+  /* Add or update this style for the Enroll button */
+  button[type="submit"] {
+    background-color: blue; /* Change the background color to blue */
+    color: white; /* Change the text color to white */
+    padding: 15px 30px; /* Adjust the padding to make the button bigger */
+    font-size: 18px; /* Adjust the font size if needed */
+    border: none; /* Remove the border if not needed */
+    border-radius: 5px; /* Optional: Apply rounded corners */
+    cursor: pointer;
+  }
+
+  /* Additional styles if needed */
+
+
+	</style>
+
+
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/main1.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Get Started</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+<div class="ai-img">
+				<img src="images/icon/ml.png" alt="ai">
+			</div>
+	</header>
+
+
+<h1><center><font color="SlateBlue" size=18px>MACHINE LEARNING</font></center></h1>
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="">
+				</div>
+				<div class="side-text">
+					<h2>Its a paid course.</h2>
+					<p>Embark on a journey of professional growth and innovation by enrolling in The Sixties Learner's Machine Learning Course. Our meticulously crafted curriculum covers the entire spectrum of machine learning, offering a blend of comprehensive theory and hands-on practical experience. With personalized guidance from The Sixties Learner, a seasoned expert in the field, and lifetime access to resources, this course ensures you stay ahead in the rapidly evolving world of technology. Whether you're a beginner or an experienced professional, our flexible learning approach accommodates your schedule. Don't miss this opportunity to enhance your skills, boost your career prospects, and become a sought-after professional in the field of machine learning. Enroll now and unlock the doors to a future filled with limitless possibilities.</p>
+<h3>Duration:10 weeks</h3><br>
+<h3>Starts from:October 2024</h3><br><br>
+<button type="submit" form action="pay.html" method="post"><center><a href="pay.html"><font color="white">Pay ₹1500</font> </center></button>				</div>
+		</div>
+	</div>
+
+
+
+
+
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Created By Dhana Srija, Amulya, Prabhasini All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> G Narayanamma Institute of Technolgy and Science<br>Shaikpet, Hyderabad</p><br>
+				<p><img src="images/icon/phone.png"> +91-1234-567-890<br><img src="images/icon/mail.png">&nbsp; sixtieslearners9419@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
